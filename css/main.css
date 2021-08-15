@@ -1,20 +1,96 @@
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+@font-face {
+  font-family: 'S Mono';
+  src: url('../fonts/SMono-Leicht.woff2') format('woff2'),
+      url('../fonts/SMono-Leicht.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 
-/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
 
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+:root {
+  --sp-xs: 0.25rem;
+  --sp-s: 0.5rem;
+  --sp-m: 1rem;
+  --sp-l: 1.5rem;
+  --sp-xl: 3rem;
+
+  --layoutMargin: var(--sp-l);
+
+  --color-background: hsl(0, 0%, 98%);
+  --color-background-card: hsl(0, 0%, 92%);
+  --color-body: hsl(0, 0%, 0%);
+  --color-body-inverted: hsl(0, 0%, 98%);
+  --color-heading: hsl(0, 0%, 10%);
+  --color-heading-inverted: hsl(0, 0%, 99%);
+  --color-interactive-primary: hsl(0, 0%, 10%);
+  --color-interactive-normal: hsl(0, 0%, 88%);
+  --color-link: hsl(245deg 100% 50%);
+  --font-family-body: S Mono, 'SF Mono', SFMono-Regular, ui-monospace,
+  'DejaVu Sans Mono', Menlo, Consolas, monospace;
+}
 
 html {
-  color: #222;
+  color: var(--color-body);
   font-size: 1em;
   line-height: 1.4;
+}
+
+body {
+  color: var(--color-body);
+  background-color: var(--color-background);
+  font-family: var(--font-family-body);
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.title {
+  font-size: 20.84699999vw;
+  line-height: 1;
+  display: inline-block;
+
+}
+
+.title::before {
+  content: "";
+  margin-top: -0.154em;
+  display: block;
+  height: 0px;
+}
+
+.navigation li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 0 1rem;
+  color: gray;
+}
+
+.grid {
+  display: grid;
+  grid-gap: var(--sp-m);
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  margin: 0 auto;
+}
+
+.grid img {
+  display: block;
+  width: 100%;
 }
 
 /*
@@ -260,4 +336,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
