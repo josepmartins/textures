@@ -33,13 +33,14 @@
 html {
   color: var(--color-body);
   font-size: 1em;
-  line-height: 1.4;
+  line-height: 1;
 }
 
 body {
   color: var(--color-body);
   background-color: var(--color-background);
   font-family: var(--font-family-body);
+  padding: 0 2vw;
   font-style: normal;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
@@ -60,8 +61,7 @@ ul {
 
 
 .title {
-  font-size: 20.84699999vw;
-  line-height: 1;
+  font-size: 20.014vw;
   display: inline-block;
 
 }
@@ -73,18 +73,32 @@ ul {
   height: 0px;
 }
 
+.navigation {
+  position: relative;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+}
+
 .navigation li {
   display: inline-block;
   text-transform: uppercase;
   font-size: 2rem;
-  padding: 0 1rem;
+  padding-right: 2rem;
   color: gray;
+  display: inline-flex;
+  align-items: center;
+}
+
+.about {
+  font-size: 3rem;
+  width: 75vw;
 }
 
 .grid {
   display: grid;
   grid-gap: var(--sp-m);
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   margin: 0 auto;
 }
 
