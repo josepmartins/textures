@@ -71,7 +71,7 @@ export default function Home({ images }) {
           <ul className="grid">
             {images.map(({ frontmatter: { title, location, description, image }, content }) => (
               <li key={title}>
-                // <Image src={image} alt={title} width={800} height={1067} />
+                <Image src={image} alt={title} width={800} height={1067} />
                 <h2>{title}</h2>
                 <p>{location}</p>
                 <p>{description}</p>
