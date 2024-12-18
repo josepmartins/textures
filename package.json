@@ -1,0 +1,25 @@
+{
+  "name": "textures",
+  "version": "1.0.0",
+  "description": "Find the perfect texture for your design project, wallpaper or print",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "gray-matter": "latest",
+    "fs": "latest"
+  },
+  "devDependencies": {
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "babel-eslint": "latest"
+  },
+  "author": "Josep Martins",
+  "license": "MIT"
+}
