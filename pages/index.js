@@ -2,8 +2,8 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import Head from 'next/head';
-import styles from '../styles/main.css';
-import normalize from '../styles/normalize.css';
+import '../styles/normalize.css';
+import '../styles/main.css';
 
 export default function Home({ images }) {
   return (
@@ -16,8 +16,6 @@ export default function Home({ images }) {
         <meta property="og:type" content="" />
         <meta property="og:url" content="" />
         <meta property="og:image" content="" />
-        <link rel="stylesheet" href={normalize} />
-        <link rel="stylesheet" href={styles} />
       </Head>
 
       <header>

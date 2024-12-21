@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
-import '../styles/main.css';
 import '../styles/normalize.css';
+import '../styles/main.css';
 
 const About = () => {
   return (
